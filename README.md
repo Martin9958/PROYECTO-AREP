@@ -17,7 +17,7 @@
 ### Image Test:
 [Greninja Image](http://arep-serverproyect.herokuapp.com/greninja.png)
 ### Gif Test:
-[Greninja Image](http://arep-serverproyect.herokuapp.com/nyancat.gif)
+[GIF](http://arep-serverproyect.herokuapp.com/nyancat.gif)
 ### Html Test:
 [Html page](http://arep-serverproyect.herokuapp.com/index.html)
 ### Error 501:
@@ -25,7 +25,7 @@
 ### Error 404:
 [Html page 404](http://arep-serverproyect.herokuapp.com/reflection/Pokemon/attack/7.reflection)
 ## Deployment
-- Application was deployed in heroku link : 
+- Application was deployed in heroku link : http://arep-serverproyect.herokuapp.com
 
 ## Offline
 - To do the offline tests, you can clone the repository with the following command:
