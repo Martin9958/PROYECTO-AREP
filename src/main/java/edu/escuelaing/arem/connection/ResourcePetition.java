@@ -31,7 +31,7 @@ public class ResourcePetition {
     public ResourcePetition(String resourcePath, Socket clientSocket){
         this.clientSocket = clientSocket;
         if(resourcePath.toLowerCase().contains(".reflection")){
-            reflectionResource(resourcePath, clientSocket);
+
         }else if(resourcePath.toLowerCase().contains(".css")){
             cssResource(resourcePath, clientSocket);
         }else if(resourcePath.toLowerCase().contains(".jpg") || resourcePath.toLowerCase().contains(".png")
@@ -129,38 +129,6 @@ public class ResourcePetition {
             binaryOut.close();
         } catch (IOException ex){
             errorHttpManagement errorHttpManagement = new errorHttpManagement(404, clientSocket);
-        }
-    }
-
-    /**
-     *
-     * @param resourcePath
-     * @param clientSocket
-     */
-    private void reflectionResource(String resourcePath, Socket clientSocket) {
-        String [] resourcePathSplit = resourcePath.split("/");
-        try {
-            Class pokemonClass = Class.forName("edu.escuelaing.arem.connection.reflection." + resourcePathSplit[2]);
-            ArrayList<Method> pokemonMethods = new ArrayList<>(Arrays.asList(pokemonClass.getMethods()));
-            try {
-                HashMap<String,Method> map = new HashMap<>();
-                for(Method m: pokemonMethods) {
-                    map.put(m.getName(),m);
-                }
-
-                String sender = (String) map.get(resourcePathSplit[3]).invoke(pokemonClass.newInstance());
-
-                System.out.println(sender);
-                PrintStream responseWeb = new PrintStream(clientSocket.getOutputStream());
-                responseWeb.println("HTTP/1.1 200 OK\r\n"+"Content-Type: text/html\r\n"+"\r\n");
-                responseWeb.println("The Result of " + resourcePathSplit[2] + "." + resourcePathSplit[3] + "(" + resourcePathSplit[4].replace("&", ",") + ") is: " + sender);
-                responseWeb.flush();
-                responseWeb.close();
-            }catch (Exception ex){
-                errorHttpManagement errorHttpManagement = new errorHttpManagement(404, clientSocket);
-            }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
     }
 
