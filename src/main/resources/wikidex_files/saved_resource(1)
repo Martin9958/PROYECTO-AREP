@@ -1,0 +1,32 @@
+
+var ftGUID_3626382="42373A9864DE0E";
+var ftConfID_3626382="0";
+var ftParams_3626382="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.btserve.com%2Frender%3FifrId%3D5b2d1649b2-188-1%26code%3D5b2d1649b2-188%26t%3Dbidt-sra%26auctionId%3Ddeccf976-72e4-43a5-a8f7-94a937d22af3%7C5b2d1649b2-188%7C1%26v2%3Dtrue%26passback%3Dfalse%26btserve%3Dtrue&ft_section=__03969157591886925714446547185630910191&cachebuster=818425.4673842144";
+var ftKeyword_3626382="";
+var ftCustom_3626382="";
+var ftSection_3626382="__03969157591886925714446547185630910191";
+var ftSegment_3626382="";
+var ftSegmentList_3626382=[];
+var ftRuleMatch_3626382="0";
+var ftTimestamp_3626382="1567762094";
+var ftGeoC2_3626382="co";
+var ftGeoState_3626382="dc";
+var ftGeoCity_3626382="bogota";
+var ftISP_3626382="telmex colombia s.a.";
+var ftSpeed_3626382="broadband";
+var ftDMA_3626382="-1";
+var ftLong_3626382="-74.0735";
+var ftLat_3626382="4.63359";
+var ftPostal_3626382="111311";
+var ftTimeZone_3626382="-500";
+var ftMobileCarrier_3626382="";
+var ftImp3626382 = {};
+ftImp3626382.privacy = "x";
+ftImp3626382.guidAge = "29";
+ftImp3626382.impID = "E912DC37-0812-E7EC-1400-03552071D8F6";
+ftImp3626382.duid = "FT:42373A9864DE0E";
+
+ftImp3626382.ft_tpplid = "";
+ftImp3626382.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/362/3626382/2560383/js/j-3626382-2560383.js" id="ftscript_m3626382" name="ftscript_m3626382"></scr'+'ipt>');

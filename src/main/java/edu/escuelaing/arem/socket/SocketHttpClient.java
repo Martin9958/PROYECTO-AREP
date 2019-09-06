@@ -6,10 +6,18 @@ import java.net.Socket;
 
 public class SocketHttpClient {
 
+    /**
+     *
+     */
     public SocketHttpClient(){
 
     }
 
+    /**
+     *
+     * @param server
+     * @return
+     */
     public Socket createASocketHttpClient(ServerSocket server){
         Socket client = null;
         try{
