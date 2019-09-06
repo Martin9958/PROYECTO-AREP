@@ -11,7 +11,7 @@
 
 ## Article
 - In the following link you can found the article about this project:
-[Article](https://docs.google.com/document/d/1lcQBYDvidzbFaZVGwE9O8ErckpnNpNphgpg4sv7_0pU/edit)
+[Article](https://docs.google.com/document/d/1lcQBYDvidzbFaZVGwE9O8ErckpnNpNphgpg4sv7_0pU)
 
 ## Test demonstrating
 ### Image Test:
