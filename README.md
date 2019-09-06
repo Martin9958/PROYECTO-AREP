@@ -24,8 +24,6 @@
 [POJO]()
 ### Error 501:
 [Html page 501](http://arep-serverproyect.herokuapp.com/)
-### Error 404:
-[Html page 404](http://arep-serverproyect.herokuapp.com/index.htm)
 
 ## Deployment
 - Application was deployed in heroku link : 

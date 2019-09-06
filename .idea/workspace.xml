@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ef6faa-be64-4185-91ea-eeb44f7d1e02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/nyancat.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ServerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/errorManagement/errorHttpManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/errorManagement/errorHttpManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +108,7 @@
       <updated>1567479923145</updated>
       <workItem from="1567479925022" duration="61000" />
       <workItem from="1567740380794" duration="15972000" />
-      <workItem from="1567767003909" duration="5177000" />
+      <workItem from="1567767003909" duration="6248000" />
     </task>
     <servers />
   </component>

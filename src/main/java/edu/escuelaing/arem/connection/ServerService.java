@@ -48,6 +48,10 @@ public class ServerService {
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public String getResourcePath(){
         return "The resource is: " + this.resourcePath;
     }
