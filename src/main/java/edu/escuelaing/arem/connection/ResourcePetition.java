@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -95,6 +96,13 @@ public class ResourcePetition {
     }
 
     private void reflectionResource(String resourcePath, Socket clientSocket) {
+        String [] resourcePathSplit = resourcePath.split("/");
+        try {
+            Class pokemonClass = Class.forName("edu.escuelaing.arem.connection.reflection." + resourcePathSplit[2]);
+            ArrayList<Method> pokemonMethods = new ArrayList<>(Arrays.asList(pokemonClass.getMethods()));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
 }
