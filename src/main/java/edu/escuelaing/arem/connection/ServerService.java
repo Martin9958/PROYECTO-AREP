@@ -27,7 +27,7 @@ public class ServerService {
         try {
             BufferedReader inputReader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             String line ;
-            while(!(line = inputReader.readLine()).equals(null)){
+            while((line = inputReader.readLine())!=null){
                 if(!inputReader.ready()){
                     break;
                 }
