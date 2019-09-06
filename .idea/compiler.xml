@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ProyectoAREP" target="1.5" />
+      <module name="ProyectoAREP" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="HaskellBuildOptions">
