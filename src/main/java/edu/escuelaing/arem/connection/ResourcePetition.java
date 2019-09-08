@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -30,8 +31,8 @@ public class ResourcePetition {
      */
     public ResourcePetition(String resourcePath, Socket clientSocket){
         this.clientSocket = clientSocket;
-        if(resourcePath.toLowerCase().contains(".reflection")){
-
+        if(resourcePath.toLowerCase().contains("/reflection/")){
+            pojoResource(resourcePath,clientSocket);
         }else if(resourcePath.toLowerCase().contains(".css")){
             cssResource(resourcePath, clientSocket);
         }else if(resourcePath.toLowerCase().contains(".jpg") || resourcePath.toLowerCase().contains(".png")
@@ -41,6 +42,24 @@ public class ResourcePetition {
             httpResources(resourcePath, clientSocket);
         }else{
             errorHttpManagement errorHttpManagement = new errorHttpManagement(501, clientSocket);
+        }
+    }
+
+    /**
+     *
+     * @param resourcePath
+     * @param clientSocket
+     */
+    private void pojoResource(String resourcePath, Socket clientSocket) {
+        try{
+            String[] params = resourcePath.split("/");
+            Class pokemon  = Class.forName("edu.escuelaing.arem.connection.reflection."+params[2]);
+            Boolean parameter = true;
+            String response = null;
+            String[] split = null;
+            preparePOJOComponent(params,clientSocket,pokemon,parameter,response,split);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
@@ -130,6 +149,48 @@ public class ResourcePetition {
         } catch (IOException ex){
             errorHttpManagement errorHttpManagement = new errorHttpManagement(404, clientSocket);
         }
+    }
+
+    /**
+     * 
+     * @param param
+     * @param clientSocket
+     * @param pokemon
+     * @param parameter
+     * @param response
+     * @param split
+     */
+    private void preparePOJOComponent(String[] param, Socket clientSocket, Class pokemon, Boolean parameter, String response, String[] split){
+        try{
+            if(param.length==5){
+                split = param[4].split("&");
+            }else{
+                parameter = false;
+            }
+            ArrayList<Method> metodos = new ArrayList<>(Arrays.asList(pokemon.getMethods()));
+            HashMap<String,Method> map = new HashMap<>();
+            for(Method m: metodos){
+                map.put(m.getName(),m);
+            }
+            if(parameter){
+                response = (String) map.get(param[3]).invoke(pokemon.newInstance(),split);
+            }else{
+                response = (String) map.get(param[3]).invoke(pokemon.newInstance());
+            }
+            System.out.println(response);
+            PrintStream responseWeb = new PrintStream(clientSocket.getOutputStream());
+            responseWeb.println("HTTP/1.1 200 OK\r\n"+"Content-Type: text/html\r\n"+"\r\n");
+            if(parameter){
+                responseWeb.println(response);
+            }else{
+                responseWeb.println(response);
+            }
+            responseWeb.flush();
+            responseWeb.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

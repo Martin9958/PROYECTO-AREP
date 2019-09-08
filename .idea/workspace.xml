@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ef6faa-be64-4185-91ea-eeb44f7d1e02" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -53,6 +57,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="edu.escuelaing.arem" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.escuelaing.arem.connection.reflection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -102,7 +109,8 @@
       <updated>1567479923145</updated>
       <workItem from="1567479925022" duration="61000" />
       <workItem from="1567740380794" duration="15972000" />
-      <workItem from="1567767003909" duration="7611000" />
+      <workItem from="1567767003909" duration="7927000" />
+      <workItem from="1567974810415" duration="8837000" />
     </task>
     <servers />
   </component>

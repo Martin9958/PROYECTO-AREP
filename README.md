@@ -20,6 +20,8 @@
 [GIF](http://arep-serverproyect.herokuapp.com/nyancat.gif)
 ### Html Test:
 [Html page](http://arep-serverproyect.herokuapp.com/index.html)
+### POJO Test:
+[Html page](http://arep-serverproyect.herokuapp.com/reflection/Pokemon/pokemon/ludicolo&hoenn&agua_planta&femenino&180&56&1000&5678&456&890)
 ### Error 501:
 [Html page 501](http://arep-serverproyect.herokuapp.com/)
 ### Error 404:
