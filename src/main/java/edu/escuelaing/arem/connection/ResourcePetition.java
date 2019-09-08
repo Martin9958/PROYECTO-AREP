@@ -40,7 +40,7 @@ public class ResourcePetition {
             imagesResources(resourcePath, clientSocket);
         }else if(resourcePath.toLowerCase().contains(".html")){
             httpResources(resourcePath, clientSocket);
-        }else{
+        } else{
             errorHttpManagement errorHttpManagement = new errorHttpManagement(501, clientSocket);
         }
     }
