@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29ef6faa-be64-4185-91ea-eeb44f7d1e02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/arep.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/ResourcePetition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/escuelaing/arem/connection/reflection/Pokemon.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
       <list>
         <option value="Class" />
         <option value="AnnotationType" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -109,7 +111,7 @@
       <workItem from="1567479925022" duration="61000" />
       <workItem from="1567740380794" duration="15972000" />
       <workItem from="1567767003909" duration="7927000" />
-      <workItem from="1567974810415" duration="10893000" />
+      <workItem from="1567974810415" duration="12644000" />
     </task>
     <servers />
   </component>

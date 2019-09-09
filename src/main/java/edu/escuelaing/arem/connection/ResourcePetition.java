@@ -40,8 +40,31 @@ public class ResourcePetition {
             imagesResources(resourcePath, clientSocket);
         }else if(resourcePath.toLowerCase().contains(".html")){
             httpResources(resourcePath, clientSocket);
-        } else{
+        }else if(resourcePath.toLowerCase().contains("/pojo/app")){
+            pojoResourceHttp(clientSocket);
+        }else{
             errorHttpManagement errorHttpManagement = new errorHttpManagement(501, clientSocket);
+        }
+    }
+
+    private void pojoResourceHttp(Socket clientSocket) {
+        try {
+            BufferedReader bf = new BufferedReader(new FileReader("src/main/resources/arep.html"));
+            StringBuilder outputLine = new StringBuilder();
+            outputLine.append("HTTP/1.1 200 OK\r\n");
+            outputLine.append("Content-Type: text/"+"html"+"\n");
+            outputLine.append("\r\n\r\n");
+            String bfRead;
+            while ((bfRead = bf.readLine()) != null) {
+                outputLine.append(bfRead);
+            }
+            PrintWriter out = new PrintWriter(
+                    this.clientSocket.getOutputStream(), true);
+            out.println(outputLine.toString());
+            out.close();
+
+        }catch (IOException ex){
+            errorHttpManagement errorHttpManagement = new errorHttpManagement(404, clientSocket);
         }
     }
 
